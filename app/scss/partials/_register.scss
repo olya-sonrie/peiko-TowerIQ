@@ -1,0 +1,23 @@
+.register {
+  color: $primary-text-color;
+  background: url(../img/register.jpg) center/cover no-repeat;
+
+  .title {
+    color: $primary-text-color;
+    margin: 1em 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto 2em;
+    align-items: center;
+
+    &-text {
+      text-align: right;
+      width: 25em;
+      margin-right: 2em;
+    }
+  }
+}

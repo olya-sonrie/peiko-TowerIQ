@@ -1,0 +1,471 @@
+@media screen and (max-width: 1240px) {
+
+  .categories {
+
+    &__item-wrapper {
+      grid-template-columns: 22.5vw 21vw;
+    }
+
+    &__item:nth-child(1) {
+      grid-column: 1/3;
+      grid-row: 1;
+    }
+
+    &__item:nth-child(2) {
+      grid-column: 1/3;
+      grid-row: 2;
+    }
+
+    &__item:nth-child(3) {
+      grid-column: 3/5;
+      grid-row: 1;
+    }
+
+    &__item:nth-child(4) {
+      grid-column: 1/3;
+      grid-row: 3;
+    }
+
+    &__item:nth-child(5) {
+      grid-column: 3/5;
+      grid-row: 2;
+    }
+
+    &__item:nth-child(6) {
+      grid-column: 3/5;
+      grid-row: 3;
+    }
+  }
+
+  .forum__item-wrapper {
+    padding: 0;
+  }
+
+  .register__item {
+    width: 70%;
+  }
+
+  .footer {
+
+    .about-us {
+      width: 30%;
+    }
+
+    .resources {
+      width: 35%;
+    }
+
+    .newsletter__subscribe {
+
+      .input-field {
+        padding-right: 10em;
+      }
+      .submit-button {
+        left: 11.2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .header__bottom .navigation-menu__link {
+    font-size: 20px;
+  }
+
+  .categories__tag {
+    font-size: 13px;
+  }
+
+  .forum__item {
+
+    &-title {
+      font-size: 12px;
+    }
+
+    &-category {
+      font-size: 16px;
+    }
+
+    &-question {
+      font-size: 14px;
+    }
+  }
+
+  .testimonials {
+
+    &__item {
+
+      &-content {
+        font-size: 16px;
+      }
+
+      &-author {
+        font-size: 20px;
+      }
+    }
+
+    .author-position {
+      font-size: 16px;
+    }
+  }
+
+  .news__item {
+
+    &-category {
+      font-size: 12px;
+    }
+
+    &-title {
+      font-size: 20px;
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+
+    &__title {
+      font-size: 16px;
+    }
+
+    .about-us__text {
+      font-size: 13px;
+    }
+
+    .newsletter__subscribe .submit-button {
+      left: 13.4em;
+      top: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .header {
+
+    &__top {
+      margin-bottom: 4em;
+
+      &-options {
+        display: none;
+      }
+    }
+
+    .top-info {
+
+      &__title {
+        text-align: left;
+      }
+
+      &__content {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+
+    &__center {
+      margin-bottom: 4em;
+    }
+
+    &__menu {
+      display: flex;
+    }
+
+    .navigation-menu__link {
+      font-size: 16px;
+    }
+  }
+
+  .categories__tag {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .forum {
+
+    &__item {
+
+      &-category {
+        font-size: 14px;
+      }
+
+      &-question {
+        font-size: 13px;
+      }
+
+      &-bottom {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &__info {
+      margin: .5em 0 1em;
+    }
+  }
+
+  .testimonials {
+
+    &::after {
+      left: 10em;
+    }
+
+    &__item-content {
+      font-size: 14px;
+    }
+
+    &__item-author {
+      font-size: 16px;
+    }
+
+    .author-position {
+      font-size: 14px;
+    }
+  }
+
+  .news {
+
+    &__item-category {
+      font-size: 11px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+  }
+
+  .register__item {
+    flex-direction: column;
+
+    &-text {
+      text-align: center;
+      margin: 0 0 1em;
+    }
+  }
+
+  .footer {
+
+    &__title {
+      font-size: 14px;
+    }
+
+    .about-us {
+      width: 35%;
+    }
+
+    .resources {
+      width: 25%;
+
+      &__links {
+        flex-direction: column;
+      }
+    }
+
+    .newsletter {
+      width: 30%;
+
+      .input-field {
+        padding-right: 2em;
+      }
+
+      .submit-button {
+        position: relative;
+        left: 0;
+        top: 1em;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+
+    &__center {
+      margin-left: 0;
+      transform: translateX(0);
+    }
+
+    &__bottom {
+      position: relative;
+      padding: 0;
+
+      .navigation-menu {
+        flex-direction: column;
+
+        &__link {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .categories {
+
+    &__item {
+
+      &-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 15vw);
+      }
+
+      &:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1/3;
+      }
+
+      &:nth-child(2) {
+        grid-column: 1;
+        grid-row: 3/5;
+      }
+
+      &:nth-child(3) {
+        grid-column: 1;
+        grid-row: 7/9;
+      }
+
+      &:nth-child(4) {
+        grid-column: 1;
+        grid-row: 5/7;
+      }
+
+      &:nth-child(5) {
+        grid-column: 1;
+        grid-row: 9/11;
+      }
+
+      &:nth-child(6) {
+        grid-column: 1;
+        grid-row: 11/13;
+      }
+    }
+  }
+
+  .forum {
+
+    &__item {
+      min-width: 260px;
+    }
+
+    &__info {
+      justify-content: space-between;
+      width: 98%;
+    }
+
+    .button-go {
+      position: relative;
+      width: 100%;
+
+      svg {
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 2em 5em;
+
+    &::before {
+      left: 5em;
+    }
+
+    &::after {
+      left: 8em;
+    }
+
+    &-title {
+      margin-left: 3.5em;
+    }
+
+    .slick-dots {
+      width: 7em;
+      margin-left: 55%;
+      transform: translateX(-45%);
+    }
+  }
+
+  .footer {
+    text-align: center;
+
+    &__bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about-us,
+      .resources,
+      .newsletter {
+        width: 100%;
+        margin: 0;
+      }
+
+      .input-field {
+        width: 100%;
+      }
+
+      .coperight {
+        margin: 4em 0 2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  .padding {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  #menu {
+    margin: -65px 0 0 146%;
+  }
+
+  .categories__item-wrapper {
+    grid-template-rows: repeat(12,35vw);
+  }
+
+  .forum__item,
+  .register-button {
+    width: 100%;
+  }
+
+  .news-author {
+    display: none;
+  }
+}

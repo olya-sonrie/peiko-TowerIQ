@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+@import 'partials/slick';
+@import 'partials/vars';
+
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.padding {
+  padding: 2em 3.5em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+p {
+  line-height: 26px;
+  margin: .5em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 36px;
+  color: $title-color;
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.input-field {
+  background: #ECEEEE;
+  border: 1px solid rgba(158, 168, 171, 0.14);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.search {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 10px;
+  left: 190px;
+  cursor: pointer;
+
+  svg {
+    vertical-align: bottom;
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+  margin: 2em 0 1em;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px 20px;
+  border-radius: 5px;
+  color: $primary-text-color;
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  transition: .3s linear;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $primary-light-color;
+    border-color: $primary-light-color;
+    offset: none;
+  }
+}
+
+.button-light {
+  background: $primary-light-color;
+  border-color: $primary-light-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $primary-color;
+    border: 1px solid $primary-color;
+  }
+}
+
+.button-secondary {
+  background: $secondary-color;
+  border-color: $secondary-color;
+  color: $dark-elem-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $secondary-light-color;
+    border: 1px solid $secondary-light-color;
+  }
+}
+
+.button-go {
+  background: #F5F6F7;
+  border-color: $primary-light-color;
+  color: $dark-elem-color;
+
+  svg {
+    margin-left: 20px;
+    transition: .3s linear;
+  }
+
+  path {
+    transition: .3s linear;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $primary-light-color;
+    border: 1px solid $primary-light-color;
+    color: $primary-text-color;
+
+    path {
+      fill: $primary-text-color;
+    }
+  }
+}
+
+
+@import 'partials/header';
+@import 'partials/categories';
+@import 'partials/forum';
+@import 'partials/suppliers';
+@import 'partials/testimonials';
+@import 'partials/news';
+@import 'partials/register';
+@import 'partials/footer';
+
+@import 'partials/media';

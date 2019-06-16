@@ -1,0 +1,43 @@
+.suppliers {
+  padding: 2em 0;
+  margin-bottom: 2em;
+  position: relative;
+
+  .logo-carousel__item {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    color: #9EA8AB;
+    font-weight: 800;
+    top: -3em;
+    z-index: 1;
+    right: 13em;
+    display: block;
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: contrast(.1);
+    }
+  }
+
+  .slick-prev {
+    background: url(../icons/arrow.png) center/cover no-repeat;
+  }
+
+  .slick-next {
+    right: 10em;
+    background: url(../icons/arrow.png) center/cover no-repeat;
+    transform: rotateY(180deg);
+  }
+}

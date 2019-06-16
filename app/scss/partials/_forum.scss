@@ -1,0 +1,63 @@
+.forum {
+  background: #F5F6F7;
+
+  &__info {
+    display: flex;
+
+    svg {
+      vertical-align: text-top;
+    }
+
+    .answer-count {
+      margin-right: 1em;
+    }
+  }
+
+  &__item {
+    background: $primary-text-color;
+    margin-bottom: 1em;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 0 3em;
+    }
+
+    border: 1px solid $title-secondary-color;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 1em;
+    width: 48%;
+
+    &-top {
+      color: $secondary-text-color;
+      border-bottom: 1px solid #ECEEEE;
+    }
+
+    &-title {
+      font-size: 14px;
+      line-height: 18px;
+      color: $title-secondary-color;
+    }
+
+    &-category {
+      font-size: 18px;
+    }
+
+    &-question {
+      font-size: 16px;
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5em 0 0;
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 1em;
+  }
+}

@@ -1,0 +1,104 @@
+.testimonials {
+  padding: 2em 11em 2em 16.5em;
+  position: relative;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: url(../icons/quote.png) center/cover no-repeat;
+      width: 31px;
+      height: 44px;
+      left: 10.5em;
+      top: 2em;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url(../icons/quote.png) center/cover no-repeat;
+      width: 31px;
+      height: 44px;
+      left: 13em;
+      top: 2em;
+    }
+
+  &-title {
+    text-align: left;
+    // position: relative;
+  }
+
+  &__item-content {
+    font-size: 18px;
+  }
+
+  &__item-author {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .author-position {
+    font-size: 20px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    color: #9EA8AB;
+    font-weight: 800;
+    top: -3em;
+    z-index: 1;
+    right: 4em;
+    display: block;
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: contrast(.1);
+    }
+  }
+
+  .slick-prev {
+    background: url(../icons/arrow.png) center/cover no-repeat;
+  }
+
+  .slick-next {
+    right: 1em;
+    background: url(../icons/arrow.png) center/cover no-repeat;
+    transform: rotateY(180deg);
+  }
+
+  #slick-slide-control10,
+  #slick-slide-control11,
+  #slick-slide-control12,
+  #slick-slide-control13,
+  #slick-slide-control14 {
+    display: none;
+  }
+
+  .slick-dots {
+    display: flex!important;
+    justify-content: space-around;
+    width: 4em;
+    font-size: 20px;
+    margin-left: 100%;
+
+    li {
+      transition: .3s linear;
+      color: #ECEEEE;
+
+      &:hover,
+      &:active,
+      &:focus {
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+}
